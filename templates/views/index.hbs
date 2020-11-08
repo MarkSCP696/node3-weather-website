@@ -1,0 +1,29 @@
+<!-- è come un html in cui posso mettere dei valori che cambiano contenuto dinamico -->
+<!DOCTYPE html>
+
+
+<haed>
+    <title>Weather</title>
+    <link rel="icon" href="/img/pic2.png">  <!--  fav icon -->
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</haed>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+    <p>Use this site to search the weather</p>    
+    <form>
+        <input placeholder="Location">
+        <button>Search</button>
+    </form>    
+    <p id="message-1"></p>
+    <p id="message-2"></p>
+
+    </div>
+
+    {{>footer}}
+    <script src="/js/app.js"></script>  <!--  javascript client side da mettere alla fine sennò non riesco a prendere l'id del form -->  
+</body>
+
+</html>
