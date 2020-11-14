@@ -1,5 +1,6 @@
-// inizializzo tutto il package json con npm init -y
 
+// inizializzo tutto il package json con npm init -y
+// npm install nodemon@1.18.5 -g istallato come globale nel mio ambiente di sviluppo e non nel singolo progetto
 // npm i request@2.88.0  modulo per fare request http
 
 //npm i express@4.16.4
