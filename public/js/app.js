@@ -6,7 +6,7 @@ const messageTwo = document.querySelector("#message-2");
 weatherForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const location = search.value;
-  fetch("http://localhost:3000/weather?address=" + location).then(
+  fetch("/weather?address=" + location).then(
     (response) => {
       messageOne.textContent = "";
       messageTwo.textContent = "";

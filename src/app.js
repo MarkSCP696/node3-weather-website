@@ -15,6 +15,9 @@ const forecast = require("./utils/forecast");
 
 const app = express();
 
+//SE USO HAROKU PRENDO LA VARIABILE ALTRIMENTI PRENDO 3000
+const port = process.env.PORT || 3000
+
 //varaibili node js che  ci dicono dove siamo
 console.log(__dirname);
 console.log(__filename);
@@ -30,7 +33,7 @@ app.set("view engine", "hbs");
 app.set("views", viewsPath);
 hbs.registerPartials(partialPath);
 
-//Set up static directori to serve ---> dovrò solo mettere l'html statico nella cartella public e ci sarà bisogno di app.get
+//Set up static directory to serve ---> dovrò solo mettere l'html statico nella cartella public e ci sarà bisogno di app.get
 app.use(express.static(publicDirectoryPath));
 
 app.get("", (req, res) => {
@@ -111,6 +114,6 @@ app.get("*", (req, res) => {
 });
 
 //per mettere in locale il server app an running  localhost:3000
-app.listen(3000, () => {
-  console.log("Server up port 3000");
+app.listen(port, () => {
+  console.log("Server up port " + port);
 });
