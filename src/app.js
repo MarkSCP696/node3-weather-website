@@ -5,7 +5,7 @@
 
 //npm i express@4.16.4
 
-//nodemon src/app.js -e js,hbs        in modo che nodemon veda i cambiamenti sulle varie estensioni
+//nodemon src/app.js -e js,hbs        in modo che nodemon veda i cambiamenti sulle varie estensioni 
 
 const { response } = require("express");
 const path = require("path");
